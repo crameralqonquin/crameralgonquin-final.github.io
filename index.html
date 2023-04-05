@@ -2,15 +2,14 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="description" content="A webpage for sharing information about rabbits.">
+	<meta name="description" content="A homepage for a website about caring for rabbits.">
 	<meta name="keywords" content="Rabbit, bunny, hare, pet, care">
 	<meta name="author" content="Alexander C.">
 	<meta name="robots" content="index, follow">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<!-- link to CSS and JS -->
-	<link rel="stylesheet" href="styles.css"> 
-    <script type="text/javascript" src="script.js"></script>
+	<!-- link to CSS -->
+    <link rel="stylesheet" href="styles.css">
 
     <!-- icon -->
     <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/2730/2730423.png">
@@ -23,61 +22,77 @@
     <body>
     	<main>
         <div class="wrap">
-        	<div class="container">
+        <div class="container">
   			<div class="row">
           <br>
       		<h1><br><u>The Rabbit Report</u><br><br></h1>
-              <br>
-              <br>
-              <div>
-              <marquee direction="right" behavior="alternate" width=100%>
-              <img src="http://pixelartmaker-data-78746291193.nyc3.digitaloceanspaces.com/image/710cd73e1b16ad1.png" width="200px" alt="Pixel art of a rabbit">
-              </marquee>
-          	  </div>
-            <p style="text-align: center;"><br><br>Welcome to the Rabbit Report -- a website all about lagomorphs.<br><br>Pet rabbits are lovable and intelligent animals that make great companions for animal lovers of all ages. Bunnies are known for their gentle and affectionate personalities, and they enjoy socializing with their owners. They are easy to care for and are a good choice for people who may not have the space, time, or ability to care for larger pets. When it comes to caring for a pet rabbit, it's important to provide them with a space to play, a healthy diet, a proper hygiene regimen, and a cozy living environment. Below, you will find all the information you need to care for your furry friend!<br><br><br></p>
-            </div>
 
-            <!-- button -->
-            <div class="button">
-            <input onclick="change()" type="button" value="Why are rabbits so lucky?" id="button"><br><br><br><br><br>
-            
+            <!-- image -->
+            <marquee behavior="alternate" direction="right" width="70%">
+            <img src="https://66.media.tumblr.com/11d4d09e5a7600817f888598d0d53ff9/tumblr_mjokv173Y51rfjowdo1_500.gif" width="400" height="400" alt="Pixel art of a pair of bouncing rabbits">
+            </marquee>
+
+            <!-- text -->
+            <p style="text-align: center;">Welcome to the Rabbit Report -- a website all about lagomorphs.<br><br>Pet rabbits are lovable and intelligent animals that make great companions for animal lovers of all ages. Bunnies are known for their gentle and affectionate personalities, and they enjoy socializing with their owners. They are easy to care for and are a good choice for people who may not have the space, time, or ability to care for larger pets. When it comes to caring for a pet rabbit, it's important to give them all they need -- including time to play, a healthy diet, a proper hygiene regimen, and a cozy living space. Below, you will find all the information you need to care for your furry friend!<br><br><br></p>
+
+            <!-- bar -->
+            <form method="GET">
+            What is your rabbit's name? <input type="text" size="20" id="myname" onkeydown = "if (event.keyCode == 13)  document.getElementById('mybutton').click()">
+            <input type="text" style="display: none;">
+            <button type="button" id="mybutton">Submit</button>
+            </form>
+            <br>
+            <div id="hellomessage"></div>
+            <br><br><br>
+
             <!-- container -->
             <div class="container">
-    <main class="grid">
-    <article>
-      <img src="https://i.pinimg.com/originals/51/04/43/51044308bbd09742b8f5e029971dab21.gif" alt="Pixel art of a rabbit">
-      <div class="text">
-        <h2>Play</h2>
-        <p style="text-align: center;">How do you play with a rabbit?</p>
-        <a href="index_2.html">Read more</a>
-      </div>
-    </article>
-    <article>
-      <img src="https://thumbs.gfycat.com/HandmadeMadeupBetafish-max-1mb.gif" alt="Pixel art of a rabbit">
-      <div class="text">
-        <h2>Grooming</h2>
-        <p style="text-align: center;">How do you groom a rabbit?</p>
-        <a href="index_3.html">Read more</a>
-      </div>
-    </article>
-    <article>
-      <img src="https://i.pinimg.com/originals/c0/52/ed/c052edd02024c5d2d6d9c556ab1ad7c9.gif" alt="Pixel art of a rabbit">
-      <div class="text">
-        <h2>Diet</h2>
-        <p style="text-align: center;">How do you nourish a rabbit?</p>
-        <a href="index_4.html">Read more</a>
-      </div>
-    </article>
-    <article>
-      <img src="https://cutewallpaper.org/24/bunny-gif-transparent/pixel-af032-bunny-b3d3c-gifs-a7a1f-tenor.gif" alt="Pixel art of a rabbit">
-      <div class="text">
-        <h2>Shelter</h2>
-        <p style="text-align: center;">How do you house a rabbit?</p>
-        <a href="index_5.html">Read more</a>
+            <div class="grid">
+                <article>
+                  <img src="https://i.pinimg.com/originals/51/04/43/51044308bbd09742b8f5e029971dab21.gif" alt="Pixel art of a rabbit">
+                  <div class="text">
+                    <h2>Play</h2>
+                    <p style="text-align: center;">How do you play with a rabbit?</p>
+                    <a href="index_2.html">Read more</a>
+                  </div>
+                </article>
+                <article>
+                  <img src="https://thumbs.gfycat.com/HandmadeMadeupBetafish-max-1mb.gif" alt="Pixel art of a rabbit">
+                  <div class="text">
+                    <h2>Grooming</h2>
+                    <p style="text-align: center;">How do you groom a rabbit?</p>
+                    <a href="index_3.html">Read more</a>
+                  </div>
+                </article>
+                <article>
+                  <img src="https://i.pinimg.com/originals/c0/52/ed/c052edd02024c5d2d6d9c556ab1ad7c9.gif" alt="Pixel art of a rabbit">
+                    <div class="text">
+                      <h2>Diet</h2>
+                      <p style="text-align: center;">How do you nourish a rabbit?</p>
+                      <a href="index_4.html">Read more</a>
+                    </div>
+                  </article>
+                  <article>
+                    <img src="https://cutewallpaper.org/24/bunny-gif-transparent/pixel-af032-bunny-b3d3c-gifs-a7a1f-tenor.gif" alt="Pixel art of a rabbit">
+                    <div class="text">
+                      <h2>Shelter</h2>
+                      <p style="text-align: center;">How do you house a rabbit?</p>
+                      <a href="index_5.html">Read more</a>
+                    </div>
+                  </article>
+              </div>
+              </div>
+        <br><br><br>
+
+        <!-- link to page at footer -->
+        <div class="box"><a href="index_6.html">About</a></div>
+        <br><br><br>
         </div>
-        </article>
-        </article>
-        <br>
-        <br>
-  </main>
-</div>
+        </div>
+        </div>
+
+        <!-- link to JS -->
+        <script src="script.js"></script>
+    </main>
+  </body>
+</html>
