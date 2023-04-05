@@ -1,6 +1,6 @@
-// Button
-function change()
-{
-    var elem = document.getElementById("button");
-    if (elem.value=="Why are rabbits so lucky?") elem.value = "Because they have four rabbits feet!";
+//Name response
+function ShowHelloMessage() {
+    var name = document.getElementById("myname");
+    document.getElementById("hellomessage").innerHTML = name.value + " is a very nice name!";
 }
+document.getElementById("mybutton").onclick = ShowHelloMessage;
