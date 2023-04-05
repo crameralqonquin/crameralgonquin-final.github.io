@@ -58,17 +58,18 @@ a:focus, a:hover {color: #f4ae05; text-decoration: none; -webkit-box-shadow: non
 
 #expanding-image {
   border-radius: 10%;
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   transition: all 0.5s ease-out;
 }
 
 #expanding-image:hover {
-  transform: scale(1.35);
+  transform: scale(1.5);
 }
 
 /*box properties*/
 .return {
+  background-color: white;
   border-style: solid;
   border-width: 5px;
   margin-left: 300px;
